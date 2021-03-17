@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+    mysql:
+        image: mysql:8.0.23
+        container_name: mysql
+        restart: always
+        network_mode: network_bd
+        volumes:
+            - /opt/mysql/db:/var/lib/mysql
+        ports:
+            - "3306:3306"
+        hostname: 127.0.0.1
+        environment:
+            MYSQL_ROOT_PASSWORD: 'desarrollos'
+volumes:
+    db: {}
