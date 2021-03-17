@@ -1,3 +1,5 @@
+# In the "Network Mode" option you will place the network you created earlier. 
+
 version: "3.8"
 
 services:
